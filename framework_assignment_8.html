@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Button and Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-10">
+
+  <!-- Custom Button -->
+  <div class="text-center mb-12">
+    <button class="bg-custom-blue text-white px-6 py-3 rounded-lg hover:bg-custom-green focus:outline-none focus:ring-2 focus:ring-custom-green">
+      Custom Button
+    </button>
+  </div>
+
+  <!-- Custom Card -->
+  <div class="max-w-sm rounded-lg shadow-lg bg-white p-6 mx-auto">
+    <!-- New Image -->
+    <img class="rounded-t-lg w-full h-48 object-cover" src="https://www.techmadeplain.com/img/2014/300x200.png" alt="Card image">
+    <div class="mt-4">
+      <h3 class="text-xl font-semibold text-custom-blue">Custom Card Title</h3>
+      <p class="mt-2 text-custom-gray">This is a sample card description that gives more information about the content. It's a great way to display information in an attractive way.</p>
+    </div>
+    <div class="mt-6">
+      <button class="bg-custom-blue text-white px-6 py-3 rounded-lg hover:bg-custom-green focus:outline-none focus:ring-2 focus:ring-custom-green">
+        Read More
+      </button>
+    </div>
+  </div>
+
+</body>
+<script>
+  tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'custom-blue': '#1e40af',  /* Custom Blue */
+            'custom-green': '#10b981', /* Custom Green */
+            'custom-gray': '#d1d5db',  /* Custom Gray */
+          },
+          spacing: {
+            '18': '4.5rem',   /* Custom Spacing 1 */
+            '22': '5.5rem',   /* Custom Spacing 2 */
+            '28': '7rem',     /* Custom Spacing 3 */
+          },
+        },
+      },
+    };
+</script>
+</html>
